@@ -1,0 +1,67 @@
+﻿/[Cc]ache/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ibrary/
+/[Oo]bj/
+/[Logs]/
+/[MemoryCaptures]/
+/Temp/
+/UserSettings/
+/[SharedPrecompiledHeaders]/
+/Temp/
+/UserSettings/
+
+*.cc
+*.gch
+*.idb
+*.inf
+*.log
+*.map
+*.o
+*.obj
+*.pdb
+*.pch
+*.pet
+*.pyd
+*.res
+*.sbr
+*.so
+*.suo
+
+# Visual Studio / VS Code файлы
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.openedition
+
+# Скомпилированные сборки
+/[Aa]ssets/AssetStoreTools*
+/[Aa]ssets/Plugins/Android/assets/
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Файлы краш-логов Unity
+sysinfo.txt
+crashlytics-build.properties
+
+# Выходные файлы сборки (билды) игры
+/[Bb]uild/
+/[Bb]uilds/
+/[𝖯𝖯]roduction/
+
+# Unity activation/license files
+Unity_v2022.3.49f1.alf
+unity_open.log
