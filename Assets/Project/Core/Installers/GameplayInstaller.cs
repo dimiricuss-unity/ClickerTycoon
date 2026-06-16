@@ -15,7 +15,7 @@ public class GameplayInstaller : MonoInstaller
 
     public override void InstallBindings()
     {
-        Debug.Log("--- Zenject: Контейнер инициализирован! ---");
+        Debug.Log("--- Zenject подключен! ---");
 
         Container
             .Bind<IAssetProvider>()

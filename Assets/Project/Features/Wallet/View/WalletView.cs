@@ -8,8 +8,12 @@ namespace Project.Features.Wallet.View
     {
         [SerializeField] private TextMeshProUGUI _goldText;
         [SerializeField] private Button _clickButton;
+        [SerializeField] private Image _cooldownOverlay;
 
         public TextMeshProUGUI GoldText => _goldText;
+
         public Button ClickButton => _clickButton;
+        
+        public Image CooldownOverlay => _cooldownOverlay;
     }
 }

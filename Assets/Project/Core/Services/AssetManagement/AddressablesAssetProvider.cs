@@ -43,7 +43,6 @@ namespace Project.Core.Services.AssetManagement
             return null;
         }
 
-        // Объединение Addressables и Zenject.
         public async Task<GameObject> InstantiatePrefab(string key, Transform parent = null)
         {
             GameObject prefab = await LoadAsset<GameObject>(key);
