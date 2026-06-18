@@ -39,6 +39,10 @@ namespace Project.Features.Wallet.Presenter
                     else
                     {
                         _view.CooldownOverlay.fillAmount = progress;
+
+                        float alpha = 0.1f + Mathf.PingPong(progress * 5f, 0.25f);
+
+                        SetGlowAlpha(alpha);
                     }
                     
                 })
@@ -48,6 +52,17 @@ namespace Project.Features.Wallet.Presenter
                 .Subscribe(isReady =>
                 {
                     _view.ClickButton.interactable = isReady;
+
+                    _view.FloatingCoin.SetActive(isReady);
+
+                    _view.CooldownOverlay.gameObject.SetActive(!isReady);
+
+                    _view.MiningGlow.gameObject.SetActive(!isReady);
+
+                    if (isReady)
+                    {
+                        SetGlowAlpha(0f);
+                    }
                 })
                 .AddTo(_disposables);
 
@@ -58,6 +73,13 @@ namespace Project.Features.Wallet.Presenter
                     _model.TryClickMine();
                 })
                 .AddTo(_disposables);           
+        }
+
+        private void SetGlowAlpha(float alpha)
+        {
+            Color color = _view.MiningGlow.color;
+            color.a = alpha;
+            _view.MiningGlow.color = color;
         }
 
         public void Dispose()
