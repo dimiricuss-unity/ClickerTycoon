@@ -5,7 +5,11 @@
 **[Играть в браузере](https://dimiricus.itch.io/clickertycoon)**
 
 ## Демо
-<video src="./Video/demo.mp4" width="400" controls></video>
+
+
+https://github.com/user-attachments/assets/a36b5e7e-84cc-4e05-aa66-f1e406911c9b
+
+
 
 
 ## Технологический стек и архитектура
